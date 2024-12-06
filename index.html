@@ -25,6 +25,7 @@
       gap: 63px;
       justify-content: flex-end;
       letter-spacing: 3px;
+      position: relative;
 
     }
     .nav > a { /* gets3rid of underline*/
@@ -32,6 +33,21 @@
       color: #EDE9FF;
       font-weight: 800;
     }
+    .nav > a:hover {
+      color: #FFCF3F;
+    }
+
+    .nav img {
+      position: absolute;
+      top: 50%; /* Vertically center the star */
+      left: 50%; /* Horizontally center the star */
+      transform: translate(-50%, -50%); 
+    }
+    
+    .small_star{
+      top: 50%;
+    }
+    
   </style>
   
   <body>
@@ -39,6 +55,11 @@
       <a href="#about">ABOUT</a>
       <a href="#projects">PROJECTS</a>
       <a href="#connect">CONNECT</a>
+      <img src="Star 1.png" alt="description of image">
+    </div>
+    
+    <div class="small_star">
+      <img src="Star 5.png" alt="description of image">
     </div>
     
     <div id="about"> <!-- content--> </div>
@@ -46,6 +67,7 @@
     <div id="projects"> <!-- content--> </div>
     
     <div id="connect"> <!-- content--> </div>
+   
     
     
   <!-- <h1>This is a Heading</h1>
