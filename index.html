@@ -91,11 +91,11 @@
     .home_text h1 {
       margin-bottom: 10px;
       position: relative;
-      z-index: 1;
       padding: 10px 10px 10px;
       letter-spacing: 3px;
       background-color: #FFCF3F;
       border-radius: 20px;
+      color: #10042B;
     }
 
    .home_text p {
@@ -124,7 +124,21 @@
       word-break: break-word;
       padding: 10px 50px 10px 50px;
       color: #EDE9FF;
-
+    }
+    
+    .about{
+      margin: 0;
+    }
+    
+    .about_blurb h1:first-of-type{
+      rotate: 270deg;
+      color: #2908AC;
+      height: 50px;
+      width: auto; /* Let the width adjust automatically based on the text */
+      white-space: nowrap;
+      top: 50px;
+      left: 50px; /* You need to set both left and top to position the element */
+      position: absolute;
     }
     
   </style>
@@ -148,6 +162,7 @@
         <p> I’m a digital designer and hobby illustrator and I attend the University of Waterloo for Global Business and Digital Arts.  </p>
       </div>
     </section>
+    
     <div class="blurbs">
       <table>
         <tr>
@@ -163,10 +178,12 @@
       </table>
     </div>
       
-    
-      
-      
-    <div id="about"> <!-- content--> </div>
+    <div id="about"> 
+      <div class="about_blurb">
+        <h1>A bit</h1>
+        <!--<h1>about me!</h1>-->
+      </div>
+    </div>
     
     <div id="projects"> <!-- content--> </div>
     
