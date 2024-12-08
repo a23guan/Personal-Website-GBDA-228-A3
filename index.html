@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Personal Website</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit"> <!-- body text-->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet"> <!-- body text-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous"> <!-- subheading text-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DynaPuff"> <!-- heading text-->   
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- heading text-->   
   </head>
   
   <style>
@@ -15,13 +16,29 @@
       padding: 0;
     }
     
+    p{
+      font-family: "Outfit", sans-serif;
+      font-size: 36px;
+    }
+    
+    h1{
+      font-family: "DynaPuff", sans-serif;
+      font-size: 96px;
+      font-weight: 700;
+    }
+    
+    h2{
+      font-family: "Righteous", sans-serif;
+      font-size: 64px;
+    }
+    
     .nav{
       font-family: "Outfit", sans-serif;
       font-size: 24px;
       background-color: #2908AC;
       display: flex;
       align-items: center; 
-      padding: 29px 30px 371px;
+      padding: 29px 30px 301px;
       gap: 63px;
       justify-content: flex-end;
       letter-spacing: 3px;
@@ -31,21 +48,36 @@
     .nav > a { /* gets3rid of underline*/
       text-decoration: none;
       color: #EDE9FF;
-      font-weight: 800;
+      font-weight: 700;
     }
     .nav > a:hover {
       color: #FFCF3F;
     }
 
-    .nav img {
+    .nav img.main_star {
       position: absolute;
       top: 50%; /* Vertically center the star */
       left: 50%; /* Horizontally center the star */
       transform: translate(-50%, -50%); 
     }
     
-    .small_star{
-      top: 50%;
+    .nav img.small_star{
+      position: absolute;
+      top: 19px;
+      left: 19px
+    }
+    
+    .home{
+      display: flex;
+    }
+    
+    .home_photo{
+      width: 30%;
+      padding: 90px 130px 0px;
+    }
+    
+    .home_text{
+      width: 70%
     }
     
   </style>
@@ -55,12 +87,20 @@
       <a href="#about">ABOUT</a>
       <a href="#projects">PROJECTS</a>
       <a href="#connect">CONNECT</a>
-      <img src="Star 1.png" alt="description of image">
-    </div>
+      <img src="Star 1.png" alt="description of image" class="main_star">
+      <img src="Star 5.png" alt="description of image" class="small_star">
+    </div>  
     
-    <div class="small_star">
-      <img src="Star 5.png" alt="description of image">
-    </div>
+    <section class="home"> <!--home page-->
+      <div class="home_photo">
+        <img src="portrait 1.png" alt="description of image">
+      </div>
+      
+      <div class="home_text">
+        <h1> Hi! I’m Amanda :) </h1>
+        <p> I’m a digital designer and hobby illustrator and I attend the University of Waterloo for Global Business and Digital Arts.  </p>
+      </div>
+    </section>
     
     <div id="about"> <!-- content--> </div>
     
