@@ -91,7 +91,7 @@
     .home_text h1 {
       margin-bottom: 10px;
       position: relative;
-      padding: 10px 10px 10px;
+      padding: 10px 10px 10px 10px;
       letter-spacing: 3px;
       background-color: #FFCF3F;
       border-radius: 20px;
@@ -212,10 +212,29 @@
     
     .can img:nth-of-type(3){
       position: absolute; /* Absolute positioning for precise placement */
-      top: 3900px; /* Places the image 20px below the bottom of the .can container */
+      top: 3880px; /* Places the image 20px below the bottom of the .can container */
       left: 50%; /* Centers horizontally within the .can container */
+      width: 40px; 
+    }
+     
+    .comic h2{
+      top: 120px;
+    }
+    
+    .comic img:first-of-type{
+      position: relative;
+      align-items: center;
+      top: 120px;
+      left: 50%;
+      width: 80%;
       transform: translateX(-50%);
-      
+    }
+    
+    .comic img:nth-of-type(2){
+      width: 40px; 
+      left: 50%;
+      top: 5500px;
+      position: absolute;
     }
     
   </style>
@@ -227,7 +246,7 @@
       <a href="#connect">CONNECT</a>
       <img src="Star 1.png" alt="desiption of image" class="main_star">
       <img src="Star 5.png" alt="description of image" class="small_star">
-    </div>  
+    </div>
     
     <section class="home"> <!--home page-->
       <div class="home_photo">
@@ -275,7 +294,13 @@
         <img src="mock ups re edited no bg 1.png" alt="description of image">
         <p>I created a clean re-imagined brand identity for Blue Monkey Coconut water.</p>
         <img src="Star 4.png" alt="description of image">
-      </div>
+        
+        <div class="comic">
+          <h2>Comic Writing &amp Illustration</h2>
+          <img src="comic.png" alt="description of image">
+          <img src="Star 4.png" alt="description of image">
+          </div>
+        </div>
     </div>
     
     <div id="connect"> <!-- content--> </div>
