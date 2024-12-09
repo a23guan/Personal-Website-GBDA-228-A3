@@ -136,7 +136,7 @@
       height: 50px;
       width: auto; /* Let the width adjust automatically based on the text */
       white-space: nowrap;
-      top: 2050px;
+      top: 2050px; 
       left: 20px; /* You need to set both left and top to position the element */
       position: absolute;
     }
@@ -144,7 +144,7 @@
     .about_blurb h1:nth-of-type(2){
       color: #2908AC;
       left: 290px;
-      top: 80px;
+      top: 70px;
       position: relative;
     }
     
@@ -155,10 +155,17 @@
       width: 35%;
     }
     
-    .about_blurb img{
+    .about_blurb img:first-of-type{
       position: relative;
       padding: 10px 10px 290px 50px;
       height: 729px;
+    }
+    
+    .about_blurb img:nth-of-type(2){
+      position: absolute;
+      left: 130px;
+      top: 1850px;
+      
     }
     
   </style>
@@ -198,13 +205,14 @@
       </table>
     </div>
       
-    <div id="about"> 
+    <div id="about">  
       <div class="about_blurb">
         <h1>A bit</h1>
         <h1>about me!</h1>
         <p>Hello my name is Amanda! My road to becoming a design student at the University of Waterloo was long. I went from wanting to be in animation, to an environment student, to a communications student. I eventually landed on the Stratford School of Interaction Design which covers many disciplines ranging from design to business to technology. As a hobby artist, I particularly enjoy design and branding and I bring an illustrative angle to my work. Currently I live in Waterloo and most of the time you can find me playing a game of Scrabble.</p>
         
         <img src="portrait 1.png" alt="description of image">
+        <img src="Star 4.png" alt="description of image">
       </div>
       
     </div>
