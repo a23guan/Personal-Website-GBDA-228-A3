@@ -301,6 +301,60 @@
       padding: 80px 0px 0px 0px;
     }
     
+    .connect{
+      padding: 70px 110px 110px 110px;
+    }
+    
+    .connect h1{
+      display: flex;
+      justify-content: flex-end;
+      color: #2908AC;
+      text-shadow: -2px -2px 0 #FF7F17, 2px -2px 0 #FF7F17, -2px 2px 0 #FF7F17, 2px 2px 0 #FF7F17;
+      letter-spacing: 4px;
+      margin-bottom: 120px;
+    }
+    
+    .connect form:first-of-type {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      gap: 30px; /* Space between inputs */
+      padding: 0px 120px;
+
+    }
+    
+    .connect input {
+      font-family: "Outfit", sans-serif;
+      color: #2908AC;
+      font-size: 36px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      border: none;
+      background-color: #FFF7E9;
+      width: 100%;
+    }
+    
+    .connect hr:first-of-type{
+      width: 470px;
+      color: #2908AC;
+      height: 3px;
+      background-color: #2908AC;
+      position: absolute;
+      left: 220px;
+    } 
+    
+    .connect hr:nth-of-type(2){
+      width: 470px;
+      color: #2908AC;
+      height: 3px;
+      background-color: #2908AC;
+      position: absolute;
+      left: 780px;
+    } 
+    
+    .connect form:nth-of-type(2) input{
+      padding: 120px 120px;
+    }
+    
   </style>
   
   <body>
@@ -398,7 +452,18 @@
       </div> 
     </div>
     
-    <div id="connect"> <!-- content--> </div>
+    <div id="connect" class="connect"> 
+      <h1>Reach Out!</h1>
+      <form>
+      <input type="text" id="name" name="name" value="Name"><br>
+      <input type="text" id="email" name="email" value="Email"><br>
+      </form>
+      <hr>
+      <hr>
+      <form>
+        <input type="type" id="type" name="type" value="Type Here..."><br>
+      </form>
+    </div>
   
   </body>
 </html>
