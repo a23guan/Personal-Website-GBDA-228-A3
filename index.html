@@ -57,8 +57,8 @@
 
     .nav img.main_star {
       position: absolute;
-      top: 50%; /* Vertically center the star */
-      left: 50%; /* Horizontally center the star */
+      top: 50%; 
+      left: 50%; 
       transform: translate(-50%, -50%); 
     }
     
@@ -67,6 +67,8 @@
       top: 19px;
       left: 19px
     }
+    
+    
     
     .home{
       padding: 90px 110px 40px 110px;  /* Your current padding */
@@ -162,10 +164,27 @@
     }
     
     .about2{
-      display: flex;
-      gap: 50px;
+      /*display: flex;
+      gap: 50px;*/
+      display: flex; 
+      flex-wrap: wrap;
+      justify-content: center;
     }
    
+    .photo {
+      flex: 40%; 
+      max-width: 40%; 
+      padding: 0 4px; 
+      margin-top: 0em; 
+      margin-bottom: 0em;
+    }
+    
+    .aboutMePara { 
+      max-width: 100%; 
+      padding: 0 4 px;
+    }
+    
+    
     .about2 p{
       padding: 0px 0px 75px 290px;
       width: 35%;
@@ -188,6 +207,7 @@
       left: 130px;
       top: 1730px; 
     }
+    
     
    .projects{
     background-color: #2908AC;  /* Bright blue background */
@@ -434,11 +454,19 @@
       <div class="about_blurb">
         <h1>A bit</h1> 
         <h1>about me!</h1>
-        <div class="about2">
-        <p>Hello my name is Amanda! My road to becoming a design student at the University of Waterloo was long. I went from wanting to be in animation, to an environment student, to a communications student. I eventually landed on the <a href="https://uwaterloo.ca/stratford-school-of-interaction-design-and-business/global-business-and-digital-arts">Stratford School of Interaction Design</a> which covers many disciplines ranging from design to business to technology. As a hobby artist, I particularly enjoy design and branding and I bring an illustrative angle to my work. Currently I live in Waterloo and most of the time you can find me playing a game of Scrabble.</p>
         
-        <img src="me pfp.png" alt="description of image">
+        <div class="about2">
+          
+          <div class="aboutMePara">
+            <p>Hello my name is Amanda! My road to becoming a design student at the University of Waterloo was long. I went from wanting to be in animation, to an environment student, to a communications student. I eventually landed on the <a href="https://uwaterloo.ca/stratford-school-of-interaction-design-and-business/global-business-and-digital-arts">Stratford School of Interaction Design</a> which covers many disciplines ranging from design to business to technology. As a hobby artist, I particularly enjoy design and branding and I bring an illustrative angle to my work. Currently I live in Waterloo and most of the time you can find me playing a game of Scrabble.</p>
+          </div>
+
+          <div class="photo">
+            <img src="me pfp.png" alt="description of image">
+          </div>
+          
         </div>
+        
         <img src="Star 4.png" alt="description of image">
       </div>
       
